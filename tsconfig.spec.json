@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "module": "umd",
+    "resolveJsonModule": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": ["jest", "node"],
+  },
+  "include": [
+    "./node_modules/@types/jest",
+    "src/**/*.spec.ts"
+  ]
+}

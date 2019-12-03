@@ -1,7 +1,7 @@
 import { input as dayOneInput } from './one/day.one.input';
 import { totalFuelCostNonRecursive, totalFuelCostRecursive } from './one/day.one';
 
-import { input as dayTwoInput} from './two/day.two.input';
+import { input as dayTwoInput } from './two/day.two.input';
 import { readCode, updateTo1202Alarm, findNumberBasedOnArgs } from './two/day.two';
 
 console.log('Day One, Part One: ', totalFuelCostNonRecursive(dayOneInput));

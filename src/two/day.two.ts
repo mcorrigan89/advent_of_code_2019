@@ -66,5 +66,4 @@ export const findNumberBasedOnArgs = (answer: number, codeArray: Array<number>) 
   const verbArg = answer - readCode(updateProgramState(nounArg, 0, codeArray))[0] / verbDiff;
 
   return { noun: nounArg, verb: verbArg };
-
-}
+};

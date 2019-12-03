@@ -57,8 +57,8 @@ const updateProgramState = (nount: number, verb: number, codeArray: Array<number
 export const findNumberBasedOnArgs = (answer: number, codeArray: Array<number>) => {
   // Calculate the change between answers based on the input
   // This is assuming it is a steady rate of change
-  const nounDiff = codeArray.reduce((_, __, idx) => Math.abs(readCode(updateProgramState(idx, 0, codeArray))[0] - readCode(updateProgramState(idx + 1, 0, codeArray))[0]), 0);
-  const verbDiff = codeArray.reduce((_, __, idx) => Math.abs(readCode(updateProgramState(0, idx, codeArray))[0] - readCode(updateProgramState(0, idx + 1, codeArray))[0]), 0);
+  const nounDiff = Math.abs(readCode(updateProgramState(0, 0, codeArray))[0] - readCode(updateProgramState(1, 0, codeArray))[0]);
+  const verbDiff = Math.abs(readCode(updateProgramState(0, 0, codeArray))[0] - readCode(updateProgramState(0, 1, codeArray))[0]);
 
   // See how many times the noun difference can be added to the answer.
   const nounArg = Math.floor((answer - readCode(updateProgramState(0, 0, codeArray))[0]) / nounDiff);

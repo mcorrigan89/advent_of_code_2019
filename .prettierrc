@@ -11,7 +11,7 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "useTabs": false,
-  "printWidth": 800,
+  "printWidth": 200,
 	"overrides": [
 		{
 			"files": "**/*.json",
